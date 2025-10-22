@@ -3,12 +3,20 @@ body{
         padding: 0%;
         background-color: black;
     }
+    button:hover{
+        cursor: pointer;
+        opacity: 0.8;
+    }
+    i:hover{
+        color: yellowgreen;
+    }
     nav{
-        background-color: rgba(56, 54, 54, 0.486);
+        background-color: rgba(32, 32, 32, 0.945);
         color: azure;
         height: 4em;
         display: flex;
         align-items: center;
+        justify-content: space-evenly;
     }
     #logo{
         width: 70px;
@@ -19,6 +27,7 @@ body{
         background-color: transparent;
         color: azure;
         font-size: medium;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         border: none;
         border-radius: 20px;
         padding: 10px;
@@ -33,6 +42,7 @@ body{
     #btn2{
       width: 50px;
       height: 35px;
+      border: 1px solid black;
       border-radius: 5px 0 0 5px;
       background-color: azure;
       cursor: pointer;
@@ -40,19 +50,567 @@ body{
     .popup{
       display: none;
       position: absolute;
-      background-color: rgba(56, 54, 54, 0.486);
+      background-color: black;
       color: azure;
-      width: 150px;
-      height: 250px;
+      width: 180px;
+      height: 300px;
       padding: 10px;
+      z-index: 1;
+    }
+    .popup p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 6px;
+        border-radius: 5px;
+    }
+    .popup p:hover{
+        background-color: rgb(65, 60, 60);
     }
     input{
         padding: 9px;
-        border: 1px solid black;
+        border: none;
     }
     #icon{
         background-color: azure;
         color: rgb(70, 77, 75);
-        padding: 7px 7px 10px 7px;
+        padding: 7px 10px 10px 10px;
         border-radius: 0 5px 5px 0;
+        border: 1px solid black;
+    }
+    #btn3{
+        background-color: transparent;
+        color: azure;
+        font-size: large;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #btn3:hover{
+        background-color: rgb(65, 60, 60);
+    }
+    select{
+        background-color: transparent;
+        color: azure;
+        font-size: medium;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    select:focus{
+        background-color: rgb(65, 60, 60);
+    }
+    section{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .container{
+        color: azure;
+        margin-top: 25px;
+        display: flex;
+        gap: 80px;
+        padding: 10px;
+    }
+    .fir{
+        position: relative;
+    }
+    #slider {
+      z-index: 2;
+      width: 700px;
+      height: 500px;
+      border-radius: 15px;
+    }
+    .fir button{
+        position: absolute;
+        background-color: black;
+        color: yellowgreen;
+        border: 2px solid yellowgreen;
+        padding: 20px;
+        font-size: large;
+    }
+    #prev{
+        top: 210px;
+        left: 0;
+        border-radius: 50%;
+    }
+    #next{
+        top: 210px;
+        right: 0;
+        border-radius: 50%;
+    }
+    .sec{
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(rgb(39, 38, 38), rgb(14, 12, 12), rgb(0, 0, 0));
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .sec img{
+        width: 100px;
+        height: 135px;
+        border-radius: 8px;
+    }
+    #ima{
+        display: grid;
+        gap: 25px;
+    }
+    #text{
+        margin-left: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 300px;
+    }
+    #text p{
+        font-size: larger;
+        font-weight: normal;
+    }
+    #text span{
+        font-size: medium;
+        opacity: 0.6;
+    }
+    #play{
+        font-size: 25px;
+        border: 1px solid azure;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    #like{
+        font-size: 15px;
+    }
+    .fea{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .fea h2{
+        color: yellowgreen;
+    }
+    .boxes{
+        color: azure;
+        display: flex;
+        gap: 30px;
+    }
+    .box{
+        display: none;
+    }
+    .box img{
+        width: 400px;
+        height: 250px;
+        border-radius: 10px;
+    }
+    .box a{
+        text-decoration: none;
+        color: royalblue;
+    }
+    #prev2{
+        position: relative;
+        top: 220px;
+        background-color: black;
+        color: yellowgreen;
+        border: 2px solid yellowgreen;
+        padding: 15px;
+        font-size: large;
+        border-radius: 50%;
+    }
+    #next2{
+        position: relative;
+        top: 220px;
+        left: 713px;
+        background-color: black;
+        color: yellowgreen;
+        border: 2px solid yellowgreen;
+        padding: 15px;
+        font-size: large;
+        border-radius: 50%;
+    }
+    .cele{
+        color: azure;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #top{
+        color: yellowgreen;
+        font-weight: bold;
+    }
+    .profile{
+        display: flex;
+        gap: 50px;
+    }
+    .pro{
+        text-align: center;
+        width: 200px;
+        cursor: pointer;
+        display: none;
+    }
+    .pro img{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+    .pro img:hover{
+        opacity: 0.7;
+    }
+    #prev3{
+        position: relative;
+        top: 270px;
+        background-color: black;
+        color: yellowgreen;
+        border: 2px solid yellowgreen;
+        padding: 15px;
+        font-size: large;
+        border-radius: 50%;
+    }
+    #next3{
+        position: relative;
+        top: 270px;
+        left: 1112px;
+        background-color: black;
+        color: yellowgreen;
+        border: 2px solid yellowgreen;
+        padding: 15px;
+        font-size: large;
+        border-radius: 50%;
+    }
+    .watch{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 100px;
+    }
+    #he{
+        color: yellowgreen;
+    }
+    #ad{
+        color: azure;
+    }
+    .wa{
+        color: azure;
+        text-align: center;
+    }
+    .wa i{
+        color: rgb(101, 119, 108);
+        font-size: 40px;
+    }
+    .wa p span{
+        font-weight: bold;
+    }
+    #btn4{
+        background-color: rgb(45, 68, 62);
+        color: mediumslateblue;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 15px;
+        border: none;
+        padding: 8px 25px 8px 25px;
+    }
+    .week{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: azure;
+        margin-top: 50px;
+    }
+    .trailer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .tra{
+        background-color: rgb(15, 20, 19);
+        height: 430px;
+        width: 200px;
+        border-radius: 0px 0px 10px 10px;
+        padding: 5px;
+        display: none;
+    }
+    .tra img{
+        height: 250px;
+        width: 200px;
+    }
+    #star{
+        color: yellowgreen;
+    }
+    #btn5{
+        background-color: rgb(45, 68, 62);
+        color: mediumslateblue;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 15px;
+        border: none;
+        padding: 8px 57px 8px 57px;
+    }
+    #btn6{
+        background-color: transparent;
+        border: none;
+        color: azure;
+        font-size: medium;
+        padding: 8px 67px 8px 67px;
+        border-radius: 20px;
+    }
+    #btn6:hover{
+        background-color: rgb(75, 70, 70);
+    }
+    #prev4{
+        position: relative;
+        top: 270px;
+        background-color: black;
+        color: yellowgreen;
+        border: 2px solid yellowgreen;
+        padding: 15px;
+        font-size: large;
+        border-radius: 50%;
+    }
+    #next4{
+        position: relative;
+        top: 270px;
+        left: 1112px;
+        background-color: black;
+        color: yellowgreen;
+        border: 2px solid yellowgreen;
+        padding: 15px;
+        font-size: large;
+        border-radius: 50%;
+    }
+    .popular{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: azure;
+        margin-top: 30px;
+    }
+    .interest{
+        display: flex;
+        justify-content: space-between;
+    }
+    .int{
+        background-color: rgb(22, 21, 21);
+        height: 220px;
+        width: 270px;
+        border-radius: 10px;
+        padding: 5px;
+        font-weight: bold;
+        display: none;
+    }
+    .int img{
+        height: 170px;
+        width: 270px;
+        border-radius: 10px;
+    }
+    #prev5{
+        position: relative;
+        top: 270px;
+        background-color: black;
+        color: yellowgreen;
+        border: 2px solid yellowgreen;
+        padding: 15px;
+        font-size: large;
+        border-radius: 50%;
+    }
+    #next5{
+        position: relative;
+        top: 270px;
+        left: 1112px;
+        background-color: black;
+        color: yellowgreen;
+        border: 2px solid yellowgreen;
+        padding: 15px;
+        font-size: large;
+        border-radius: 50%;
+    }
+    .prime{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .prime h2{
+        color: azure;
+    }
+    .trailer2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .tra2{
+        background-color: rgb(15, 20, 19);
+        color: azure;
+        height: 430px;
+        width: 200px;
+        border-radius: 0px 0px 10px 10px;
+        padding: 5px;
+        display: none;
+    }
+    .tra2 img{
+        height: 250px;
+        width: 200px;
+    }
+    #star{
+        color: yellowgreen;
+    }
+    #btn7{
+        background-color: rgb(45, 68, 62);
+        color: mediumslateblue;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 15px;
+        border: none;
+        padding: 8px 57px 8px 57px;
+    }
+    #btn8{
+        background-color: transparent;
+        border: none;
+        color: azure;
+        font-size: medium;
+        padding: 8px 67px 8px 67px;
+        border-radius: 20px;
+    }
+    #btn8:hover{
+        background-color: rgb(75, 70, 70);
+    }
+    #prev6{
+        position: relative;
+        top: 270px;
+        background-color: black;
+        color: yellowgreen;
+        border: 2px solid yellowgreen;
+        padding: 15px;
+        font-size: large;
+        border-radius: 50%;
+    }
+    #next6{
+        position: relative;
+        top: 270px;
+        left: 1112px;
+        background-color: black;
+        color: yellowgreen;
+        border: 2px solid yellowgreen;
+        padding: 15px;
+        font-size: large;
+        border-radius: 50%;
+    }
+    .boxoffice{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 100px;
+    }
+    .boxoffice h1{
+        color: yellowgreen;
+    }
+    .boxoffice h2{
+        color: azure;
+    }
+    .boxoffice span{
+        color: azure;
+        opacity: 0.6;
+    }
+    .boxoffice i{
+        color: rgb(58, 85, 85);
+        font-size: xx-large;
+    }
+    .main{
+        color: azure;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .te1 div{
+        margin-bottom: 13px;
+    }
+    .te2 div{
+        margin-bottom: 13px;
+    }
+    .news{
+        display: flex;
+        justify-content: space-between;
+    }
+    .news{
+        color: azure;
+    }
+    .trimg img{
+        width: 100px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    .trtext{
+        width: 650px;
+    }
+    .trtext p{
+        opacity: 0.9;
+        font-size: 16px;
+    }
+    .trbox{
+        border: 1px solid azure;
+        width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .trbox button{
+        border-radius: 20px;
+        background-color: transparent;
+        padding: 10px;
+        border: 1px solid azure;
+        color: azure;
+        margin-left: 10px;
+    }
+    .subnews{
+        color: azure;
+        
+    }
+    .subnews img{
+        width: 80px;
+        height: 100px;
+        border-radius: 7px;
+    }
+    .n1{
+        opacity: 0.9;
+        font-size: 14px;
+        display: flex;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    .view{
+        color: azure;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .view h2{
+        text-align: start;
+    }
+    .view p{
+        opacity: 0.8;
+        text-align: start;
+    }
+    .view button{
+        border-radius: 20px;
+        font-size: medium;
+        padding: 7px 23px 7px 23px;
+        border: none;
+        background-color: yellowgreen;
+    }
+    .foot{
+        color: azure;
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+        gap: 30px;
+    }
+    .foot i{
+        color: azure;
+        font-size: 30px;
+        margin: 5px;
+    }
+    .fbox1{
+        border: 1px solid azure;
+        width: 350px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .fbox2{
+        border: 1px solid azure;
+        width: 350px;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .fbox2 img{
+        width: 100px;
+        height: 100px;
+    }
+    .anker{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .anker a{
+        text-decoration: none;
+        color: azure;
+        margin: 20px;
+        font-size: medium;
+    }
+    .anker img{
+        width: 200px;
+        height: 100px;
     }
