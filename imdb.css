@@ -1,0 +1,58 @@
+body{
+        margin: 0%;
+        padding: 0%;
+        background-color: black;
+    }
+    nav{
+        background-color: rgba(56, 54, 54, 0.486);
+        color: azure;
+        height: 4em;
+        display: flex;
+        align-items: center;
+    }
+    #logo{
+        width: 70px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    #btn1{
+        background-color: transparent;
+        color: azure;
+        font-size: medium;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    #btn1:hover{
+        background-color: rgb(65, 60, 60);
+    }
+    .wraper{
+        position: relative;
+        display: inline-block;
+    }
+    #btn2{
+      width: 50px;
+      height: 35px;
+      border-radius: 5px 0 0 5px;
+      background-color: azure;
+      cursor: pointer;
+    }
+    .popup{
+      display: none;
+      position: absolute;
+      background-color: rgba(56, 54, 54, 0.486);
+      color: azure;
+      width: 150px;
+      height: 250px;
+      padding: 10px;
+    }
+    input{
+        padding: 9px;
+        border: 1px solid black;
+    }
+    #icon{
+        background-color: azure;
+        color: rgb(70, 77, 75);
+        padding: 7px 7px 10px 7px;
+        border-radius: 0 5px 5px 0;
+    }
